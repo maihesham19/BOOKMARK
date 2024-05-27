@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Sedan+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Dancing+Script:wght@400..700&family=Sedan+SC&display=swap');
+
+body {
+    background-color: #FFE6E6;
+
+    a {
+        text-decoration: none;
+    }
+
+    h1 {
+        font-family: "Dancing Script", cursive;
+        font-weight: bold;
+        font-size: 60px;
+        position: relative;
+        z-index: 3;
+        width: fit-content;
+        margin: auto;
+        color: #FF0080;
+    }
+
+    h1::before {
+        content: '';
+        position: absolute;
+        width: 270px;
+        height: 20px;
+        bottom: 8px;
+        background-color: #ff70acb0;
+        z-index: -1;
+        transition: all .5s;
+    }
+
+    h1:hover::before {
+        content: '';
+        position: absolute;
+        width: 270px;
+        height: 40px;
+        bottom: 8px;
+        background-color: #ff70acb0;
+        z-index: -1;
+    }
+
+    hr {
+        border: none;
+        border-top: 4px dotted #C73659;
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    h2 {
+        font-family: "Sedan SC", serif;
+        font-weight: 700;
+        background: linear-gradient(to left,
+                #C73659,
+                #FF5580,
+                #FB9AD1,
+                #f1b4cc,
+                #FF5BAE);
+        -webkit-background-clip: text;
+        color: transparent;
+        margin-bottom: 30px;
+    }
+
+    .submit {
+        background-color: #D10363;
+        border: none;
+        border-radius: 8px;
+        color: #eee;
+        transition: all.5s;
+    }
+
+    .submit:hover {
+        background-color: #FF0080;
+        color: #eee;
+    }
+
+    label {
+        font-family: "Assistant", sans-serif;
+        color: #FF70AB;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .modal-header {
+        p {
+            .c1 {
+                color: #FF0080;
+            }
+
+            .c2 {
+                color: #FF5BAE;
+            }
+
+            .c3 {
+                color: #D10363;
+            }
+        }
+    }
+
+    .table {
+        margin-top: 30px;
+
+        thead {
+            th {
+                font-family: "Assistant", sans-serif;
+                font-weight: 700;
+                color: #FF70AB;
+            }
+        }
+
+        tbody {
+            td {
+                font-family: "Assistant", sans-serif;
+                font-weight: 600;
+                color: #fe89cb;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    @media (max-width:768px) {
+        h2 {
+            font-size: 25px;
+        }
+    }
+
+    @media (max-width:600px) {
+        h2 {
+            font-size: 20px;
+        }
+
+    }
+
+    @media (max-width:500px) {
+        h2 {
+            font-size: 15px;
+        }
+    }
+}
